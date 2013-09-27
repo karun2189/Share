@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareApps" >
+
+    <Button
+        android:id="@+id/share_fb_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:drawableLeft="@drawable/fb"
+        android:onClick="shareToFB"
+        android:text="Face Book" />
+
+    <Button
+        android:id="@+id/share_twitter_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_fb_button"
+        android:layout_margin="5dip"
+        android:drawableLeft="@drawable/twitter"
+        android:onClick="shareToTwitter"
+        android:text="Twitter" />
+
+    <Button
+        android:id="@+id/share_google_plus_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_twitter_button"
+        android:layout_margin="5dip"
+        android:drawableLeft="@drawable/google_plus"
+        android:onClick="shareToGooglePlus"
+        android:text="Google Plus" />
+
+</RelativeLayout>
